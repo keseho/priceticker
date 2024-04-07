@@ -59,6 +59,8 @@
 
 import Link from "next/link";
 import React from "react";
+import { FaGithub } from "react-icons/fa";
+import Image from "next/image";
 
 const navIcons = [
   {
@@ -104,19 +106,24 @@ function Navbar() {
         </Link>
 
         <div className="flex items-center gap-5">
-          {navIcons.map((icon) => (
-            <img
-              key={icon.alt}
-              src={icon.src}
-              alt={icon.alt}
-              width={27}
-              height={27}
-              className="object-contain"
-              onClick={(event) =>
-                handleIconClick(event, icon.offsetX, icon.offsetY)
-              }
-            />
-          ))}
+          <div className="flex items-center gap-5">
+            {navIcons.map((icon) => (
+              <img
+                key={icon.alt}
+                src={icon.src}
+                alt={icon.alt}
+                width={27}
+                height={27}
+                className="object-contain"
+                onClick={(event) =>
+                  handleIconClick(event, icon.offsetX, icon.offsetY)
+                }
+              />
+            ))}
+          </div>
+          <Link href="https://github.com/keseho/priceticker">
+            <FaGithub size={34} />
+          </Link>
         </div>
       </nav>
     </header>
