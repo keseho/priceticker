@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "next-themes";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const spaceGrotest = Space_Grotesk({
@@ -27,6 +28,7 @@ export default function RootLayout({
           <Navbar />
 
           {children}
+          <Footer />
         </main>
       </body>
     </html>
