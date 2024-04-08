@@ -1,66 +1,8 @@
-// import Link from "next/link";
-// import React from "react";
-// import Image from "next/image";
-
-// const navIcons = [
-//   {
-//     src: "/assets/icons/search.svg",
-//     alt: "search",
-//   },
-//   {
-//     src: "/assets/icons/black-heart.svg",
-//     alt: "heart",
-//   },
-//   {
-//     src: "/assets/icons/user.svg",
-//     alt: "user",
-//   },
-// ];
-
-// function Navbar() {
-//   return (
-//     <header className="w-full">
-//       <nav className="nav">
-//         <Link href="/" className="flex items-center gap-1">
-//           <Image
-//             src="/assets/icons/logo.svg"
-//             width={27}
-//             height={27}
-//             alt="logo"
-//           ></Image>
-
-//           <p className="nav-logo">
-//             Price
-//             <span className="text-primary">Ticker</span>
-//           </p>
-//         </Link>
-
-//         <div className="flex items-center gap-5">
-//           {navIcons.map((icon) => (
-//             <Link href={""}>
-//             <Image
-//               key={icon.alt}
-//               src={icon.src}
-//               alt={icon.alt}
-//               width={27}
-//               height={27}
-//               className="object-contain"
-//             />
-//             </Link>
-//           ))}
-//         </div>
-//       </nav>
-//     </header>
-//   );
-// }
-
-// export default Navbar;
 "use client";
 
 import Link from "next/link";
 import React from "react";
-import { FaGithub } from "react-icons/fa";
-import Image from "next/image";
+import { FaGithubSquare } from "react-icons/fa";
 
 const navIcons = [
   {
@@ -122,7 +64,7 @@ function Navbar() {
             ))}
           </div>
           <Link href="https://github.com/keseho/priceticker">
-            <FaGithub size={34} />
+            <FaGithubSquare size={28} />
           </Link>
         </div>
       </nav>
